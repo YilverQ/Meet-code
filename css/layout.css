@@ -1,0 +1,107 @@
+/*Estilos para todos los elementos*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{text-decoration: none;}
+li{list-style: none;}
+/*Fin de los estilos que aplican para todos los elementos*/
+
+
+/*Custom Propities*/
+:root{
+  /*Colores de Google*/
+  --black:#24272a;
+  --s_black:#3f454a;
+  --yellow:#d8ad3d;
+  --blue:#009cd9;
+  --red:#b72c2c;
+  --white:#ffffff;
+}
+/*FIN de las Customs Propities*/
+
+
+/*Estilos para los elementos principales*/
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background: var(--white);
+}
+h1, h2, h3, h4, h5{
+  font-family: 'Caveat', sans-serif;
+  color:var(--s_black);
+  font-size: 40px;
+}
+p, li, a, input, select, button, label,td{
+  font-family: 'Open Sans', sans-serif;
+  color:var(--black);
+  font-size: 18px;
+  font-weight: 400;
+}
+/*Fin de los estilos principales*/
+
+
+/*Media queries - Globales*/
+@media (max-width: 750px){
+  h1, h2, h3, h4, th{
+    font-size: 30px;
+  }
+  p, li, a, input, select, button, label,td{
+    font-size: 14px;
+  }
+}
+
+
+
+
+/*KEYFRAMES*/
+@keyframes moverIzquierda{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverArriba{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverAbajo{
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+/*FIN DE LOS KEYFRAMES*/

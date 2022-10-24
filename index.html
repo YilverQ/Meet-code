@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<!--Metas-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Titulo-->
+	<title>Meat Code - Prueba Técnica Front-End</title>
+
+	<!--Estilos importados-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	
+	<!--Mis estilos-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/media_query.css">
+
+	<!--Fuentes-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+	<!--Fuentes de Fontawesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!--Favicon-->
+	<link rel="icon" href="img/favicon.png">
+</head>
+<body>
+	<!--Pantalla de carga-->
+	<div class="loading show">
+        <div class="spin"></div>
+    </div>
+
+
+	<!--Header-->
+	<header class="header">
+		<nav class="header__nav">
+			<a href="index.html"><h2 class="header__logo">Logo</h2></a>
+			<ul class="header__socialMedia">
+				<a href="#" class="header__link"><li class="header__social"><i class="fa-brands fa-facebook"></i></li></a>
+				<a href="#" class="header__link"><li class="header__social"><i class="fa-brands fa-instagram"></i></li></a>
+				<a href="#" class="header__link"><li class="header__social"><i class="fa-brands fa-youtube"></i></li></a>
+			</ul>
+		</nav>
+		<!--Main Message-->
+		<div class="header__message">
+			<img src="./img/BRUSH.png" class="brush">
+			<h1 class="header__title">El secreto de tu cocina</h1>
+		</div>
+	</header>
+	<!--End Header-->
+
+	<!--Article-->
+	<article class="main">
+		<h3 class="main__title">Nuestros Artículos</h3>
+		<!--Tags-->
+		<div class="tags">
+			<ul class="tags__container">
+				<li class="tags__item tags__item--selected"><p>Todos</p><i class="icon-tag fa-solid fa-arrow-right"></i></li>
+				<li class="tags__item" id="proof"><p>Productos</p><i class="icon-tag icon-tag--disabled fa-solid fa-arrow-right"></i></li>
+				<li class="tags__item"><p>Recetas</p><i class="icon-tag icon-tag--disabled fa-solid fa-arrow-right"></i></li>
+				<li class="tags__item"><p>Consejos</p><i class="icon-tag icon-tag--disabled fa-solid fa-arrow-right"></i></li>
+			</ul>
+		</div>
+		<!--Cards-->
+		<div class="cards">
+		</div>
+	</article>
+	<!--End Article-->
+
+	<!--Contact-->
+	<section class="contact">
+		<h3 class="main__title">Contáctanos</h3>
+		<form class="form" action="https://5eed24da4cbc340016330f0d.mockapi.io/api/newsletter" method="POST">
+			<div class="form__blockInput">
+				<label>Nombre</label>
+				<input class="form__input" type="text" id="firstname" name="firstname" placeholder="Joe" required="true">
+			</div>
+			<div class="form__blockInput">
+				<label>Apellido</label>
+				<input class="form__input" type="text" id="lastname" name="lastname" placeholder="Due" required="true">
+			</div>
+			<div class="form__blockInput">
+				<label>Mail</label>
+				<input class="form__input" type="email" id="email" name="email" placeholder="joe@gmail.com" required="true">
+			</div>
+			<div class="form__blockInput">
+				<label>Teléfono</label>
+				<input class="form__input" type="text" id="phone" name="phone" placeholder="+581255678" required="true">
+			</div>
+			<div class="send">
+				<input class="form__input" type="submit" id="buttom" value="Enviar" class="buttom">
+			</div>
+		</form>
+	</section>
+	<!--End Contact-->
+
+	<!--JS Files-->
+	<script type="text/javascript" src="./js/request.js"></script>
+	<script type="text/javascript" src="./js/loadingScreen.js"></script>
+	<script type="text/javascript" src="./js/form.js"></script>
+	<script type="text/javascript" src="./js/menu.js"></script>
+	<script type="text/javascript" src="./js/card.js"></script>
+</body>
+</html>
